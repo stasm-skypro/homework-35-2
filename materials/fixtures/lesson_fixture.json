@@ -1,0 +1,57 @@
+[
+  {
+    "model": "materials.lesson",
+    "pk": 1,
+    "fields": {
+      "name": "Введение в Python",
+      "description": "История и применение Python.",
+      "course": 1,
+      "image": "lessons/python_intro.jpg",
+      "video": "lessons/python_intro.mp4"
+    }
+  },
+  {
+    "model": "materials.lesson",
+    "pk": 2,
+    "fields": {
+      "name": "Переменные и типы данных",
+      "description": "Разбор переменных и основных типов данных.",
+      "course": 1,
+      "image": "lessons/python_vars.jpg",
+      "video": "lessons/python_vars.mp4"
+    }
+  },
+  {
+    "model": "materials.lesson",
+    "pk": 3,
+    "fields": {
+      "name": "Основы Django",
+      "description": "Структура проекта Django.",
+      "course": 2,
+      "image": "lessons/django_basics.jpg",
+      "video": "lessons/django_basics.mp4"
+    }
+  },
+  {
+    "model": "materials.lesson",
+    "pk": 4,
+    "fields": {
+      "name": "Основы SQL",
+      "description": "Создание и выполнение SQL-запросов.",
+      "course": 3,
+      "image": "lessons/sql_basics.jpg",
+      "video": "lessons/sql_basics.mp4"
+    }
+  },
+  {
+    "model": "materials.lesson",
+    "pk": 5,
+    "fields": {
+      "name": "Алгоритмы сортировки",
+      "description": "Разбор популярных алгоритмов сортировки.",
+      "course": 4,
+      "image": "lessons/sorting.jpg",
+      "video": "lessons/sorting.mp4"
+    }
+  }
+]

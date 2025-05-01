@@ -1,0 +1,133 @@
+services:
+  postgres:
+    image: postgres:17-alpine
+    container_name: psgr
+    environment:
+      - POSTGRES_DB=${DB_NAME}
+      - POSTGRES_USER=${DB_USER}
+      - POSTGRES_PASSWORD=${DB_PASSWORD}
+      - POSTGRES_HOST=${DB_HOST}
+    volumes:
+      - postgres-data:/var/lib/postgresql/data
+    networks:
+      - dbnet
+    ports:
+      - "5432:5432"
+    healthcheck:
+      test: ["CMD", "pg_isready", "-U", "${DB_USER}", "-d", "${DB_NAME}"]
+      interval: 10s
+      retries: 5
+      start_period: 30s
+      timeout: 5s
+
+  adminer:
+    image: adminer
+    container_name: adminer
+    ports:
+      - "8080:8080"
+    links:
+      - "postgres:db"
+    networks:
+      - dbnet
+    depends_on:
+      - postgres
+    healthcheck:
+      test: ["CMD", "pg_isready", "-U", "${DB_USER}", "-d", "${DB_NAME}"]
+      interval: 10s
+      retries: 5
+      start_period: 30s
+      timeout: 5s
+
+  redis:
+    image: redis
+    ports:
+      - "6379:6379"
+    networks:
+      - dbnet
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 10s
+      retries: 5
+      start_period: 30s
+      timeout: 5s
+
+  web:
+    build: .
+    image: school
+    container_name: school
+    restart: always
+    # command: bash -c "python manage.py migrate && python manage.py runserver 0.0.0.0:8000"
+    command: /entrypoint_web.sh
+    env_file:
+      - ./.env
+    networks:
+      - dbnet
+    working_dir: /app # Указание рабочей директории
+    volumes:
+      - .:/app
+      - static_volume:/app/static
+    ports:
+      - "8000:8000"
+    depends_on:
+      - postgres
+      - redis
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8000"]
+      interval: 10s
+      retries: 3
+      start_period: 30s
+      timeout: 5s
+
+  celery:
+    build: .
+    image: celery
+    container_name: celery
+    # command: bash -c "python manage.py migrate && celery -A config worker --loglevel=info"
+    command: /entrypoint_celery.sh
+    working_dir: /app # Указание рабочей директории
+    env_file:
+      - ./.env
+    networks:
+      - dbnet
+    volumes:
+      - .:/app # Монтируем всю текущую директорию в контейнер, потому что "celery" нужна директория "config".
+    depends_on:
+      - postgres
+      - redis
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8000/healthcheck"] # Замените на подходящий эндпоинт проверки
+      interval: 10s
+      retries: 3
+      start_period: 30s
+      timeout: 5s
+
+  celery-beat:
+    build: .
+    image: celery-beat
+    container_name: celery-beat
+    # command: bash -c "python manage.py migrate && celery -A config beat --loglevel=info"
+    command: /entrypoint_celery_beat.sh
+    working_dir: /app # Указание рабочей директории
+    env_file:
+      - ./.env
+    networks:
+      - dbnet
+    volumes:
+      - .:/app # Монтируем всю текущую директорию в контейнер, потому что "celery" нужна директория "config".
+    depends_on:
+      - postgres
+      - redis
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8000/healthcheck"] # Замените на подходящий эндпоинт проверки
+      interval: 10s
+      retries: 3
+      start_period: 30s
+      timeout: 5s
+
+networks:
+  dbnet:
+    driver: bridge
+
+volumes:
+  postgres-data:
+  static_volume:

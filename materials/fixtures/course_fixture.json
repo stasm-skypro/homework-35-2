@@ -1,0 +1,47 @@
+[
+  {
+    "model": "materials.course",
+    "pk": 1,
+    "fields": {
+      "name": "Python для начинающих",
+      "description": "Основы языка Python.",
+      "image": "courses/python_basics.jpg"
+    }
+  },
+  {
+    "model": "materials.course",
+    "pk": 2,
+    "fields": {
+      "name": "Django с нуля",
+      "description": "Создание веб-приложений на Django.",
+      "image": "courses/django_basics.jpg"
+    }
+  },
+  {
+    "model": "materials.course",
+    "pk": 3,
+    "fields": {
+      "name": "SQL для начинающих",
+      "description": "Основы работы с базами данных.",
+      "image": "courses/sql_basics.jpg"
+    }
+  },
+  {
+    "model": "materials.course",
+    "pk": 4,
+    "fields": {
+      "name": "Алгоритмы и структуры данных",
+      "description": "Разбор алгоритмов и структур данных.",
+      "image": "courses/algorithms.jpg"
+    }
+  },
+  {
+    "model": "materials.course",
+    "pk": 5,
+    "fields": {
+      "name": "Основы веб-разработки",
+      "description": "Введение в HTML, CSS и JavaScript.",
+      "image": "courses/web_basics.jpg"
+    }
+  }
+]

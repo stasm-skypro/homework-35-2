@@ -1,0 +1,122 @@
+[
+    {
+        "model": "users.payment",
+        "pk": 1,
+        "fields": {
+            "user": 1,
+            "date": "2025-03-15T10:30:00Z",
+            "course": 1,
+            "lesson": null,
+            "amount": "4999.99",
+            "payment_method": "transfer"
+        }
+    },
+    {
+        "model": "users.payment",
+        "pk": 2,
+        "fields": {
+            "user": 2,
+            "date": "2025-03-14T15:20:00Z",
+            "course": null,
+            "lesson": 3,
+            "amount": "999.99",
+            "payment_method": "cash"
+        }
+    },
+    {
+        "model": "users.payment",
+        "pk": 3,
+        "fields": {
+            "user": 3,
+            "date": "2025-03-13T09:00:00Z",
+            "course": 2,
+            "lesson": null,
+            "amount": "6999.99",
+            "payment_method": "transfer"
+        }
+    },
+    {
+        "model": "users.payment",
+        "pk": 4,
+        "fields": {
+            "user": 4,
+            "date": "2025-03-12T18:45:00Z",
+            "course": null,
+            "lesson": 1,
+            "amount": "1499.99",
+            "payment_method": "cash"
+        }
+    },
+    {
+        "model": "users.payment",
+        "pk": 5,
+        "fields": {
+            "user": 5,
+            "date": "2025-03-11T14:10:00Z",
+            "course": 3,
+            "lesson": null,
+            "amount": "3999.99",
+            "payment_method": "transfer"
+        }
+    },
+    {
+        "model": "users.payment",
+        "pk": 6,
+        "fields": {
+            "user": 1,
+            "date": "2025-04-15T10:30:00Z",
+            "course": 1,
+            "lesson": null,
+            "amount": "4999.99",
+            "payment_method": "transfer"
+        }
+    },
+    {
+        "model": "users.payment",
+        "pk": 7,
+        "fields": {
+            "user": 4,
+            "date": "2025-04-12T18:45:00Z",
+            "course": null,
+            "lesson": 2,
+            "amount": "1499.99",
+            "payment_method": "cash"
+        }
+    },
+    {
+        "model": "users.payment",
+        "pk": 8,
+        "fields": {
+            "user": 4,
+            "date": "2025-05-12T18:45:00Z",
+            "course": null,
+            "lesson": 3,
+            "amount": "1499.99",
+            "payment_method": "cash"
+        }
+    },
+    {
+        "model": "users.payment",
+        "pk": 9,
+        "fields": {
+            "user": 2,
+            "date": "2025-04-14T15:20:00Z",
+            "course": null,
+            "lesson": 5,
+            "amount": "999.99",
+            "payment_method": "cash"
+        }
+    },
+    {
+        "model": "users.payment",
+        "pk": 10,
+        "fields": {
+            "user": 3,
+            "date": "2025-05-13T09:00:00Z",
+            "course": 2,
+            "lesson": null,
+            "amount": "6999.99",
+            "payment_method": "transfer"
+        }
+    }
+]

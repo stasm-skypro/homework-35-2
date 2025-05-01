@@ -1,0 +1,56 @@
+[
+  {
+    "model": "users.user",
+    "pk": 2,
+    "fields": {
+      "username": "andrewdevyatov",
+      "email": "andrew.devyatov@example.com",
+      "phone": "+1234567890",
+      "city": "Moscow",
+      "password": "pbkdf2_sha256$260000$abc123$hashedpassword1",
+      "is_staff": false,
+      "is_superuser": false,
+      "is_active": true
+    }
+  },
+  {
+    "model": "users.user",
+    "pk": 3,
+    "fields": {
+      "username": "sergeyshnuroff",
+      "email": "sergey.shnurov@example.com",
+      "phone": "+1987654321",
+      "city": "Saint Petersburg",
+      "password": "pbkdf2_sha256$260000$xyz456$hashedpassword",
+      "is_staff": false,
+      "is_active": true
+    }
+  },
+  {
+    "model": "users.user",
+    "pk": 4,
+    "fields": {
+      "username": "pelageya",
+      "email": "pelageya@example.com",
+      "phone": "+7987654321",
+      "city": "Novosibirsk",
+      "password": "pbkdf2_sha256$260000$def789$hashedpassword",
+      "is_staff": false,
+      "is_active": true
+    }
+  },
+  {
+    "model": "users.user",
+    "pk": 5,
+    "fields": {
+      "username": "nikolaystarikov",
+      "email": "nikolay.starikov@example.com",
+      "phone": "+7987654321",
+      "city": "Moscow",
+      "password": "pbkdf2_sha256$160011$def789$hashedpassword",
+      "is_staff": false,
+      "is_active": true
+    }
+  }
+
+]

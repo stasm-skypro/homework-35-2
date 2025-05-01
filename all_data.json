@@ -1,0 +1,1974 @@
+[
+{
+  "model": "auth.permission",
+  "pk": 1,
+  "fields": {
+    "name": "Can add permission",
+    "content_type": 1,
+    "codename": "add_permission"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 2,
+  "fields": {
+    "name": "Can change permission",
+    "content_type": 1,
+    "codename": "change_permission"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 3,
+  "fields": {
+    "name": "Can delete permission",
+    "content_type": 1,
+    "codename": "delete_permission"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 4,
+  "fields": {
+    "name": "Can view permission",
+    "content_type": 1,
+    "codename": "view_permission"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 5,
+  "fields": {
+    "name": "Can add group",
+    "content_type": 2,
+    "codename": "add_group"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 6,
+  "fields": {
+    "name": "Can change group",
+    "content_type": 2,
+    "codename": "change_group"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 7,
+  "fields": {
+    "name": "Can delete group",
+    "content_type": 2,
+    "codename": "delete_group"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 8,
+  "fields": {
+    "name": "Can view group",
+    "content_type": 2,
+    "codename": "view_group"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 9,
+  "fields": {
+    "name": "Can add content type",
+    "content_type": 3,
+    "codename": "add_contenttype"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 10,
+  "fields": {
+    "name": "Can change content type",
+    "content_type": 3,
+    "codename": "change_contenttype"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 11,
+  "fields": {
+    "name": "Can delete content type",
+    "content_type": 3,
+    "codename": "delete_contenttype"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 12,
+  "fields": {
+    "name": "Can view content type",
+    "content_type": 3,
+    "codename": "view_contenttype"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 13,
+  "fields": {
+    "name": "Can add Пользователь",
+    "content_type": 4,
+    "codename": "add_user"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 14,
+  "fields": {
+    "name": "Can change Пользователь",
+    "content_type": 4,
+    "codename": "change_user"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 15,
+  "fields": {
+    "name": "Can delete Пользователь",
+    "content_type": 4,
+    "codename": "delete_user"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 16,
+  "fields": {
+    "name": "Can view Пользователь",
+    "content_type": 4,
+    "codename": "view_user"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 17,
+  "fields": {
+    "name": "Can add Курс",
+    "content_type": 5,
+    "codename": "add_course"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 18,
+  "fields": {
+    "name": "Can change Курс",
+    "content_type": 5,
+    "codename": "change_course"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 19,
+  "fields": {
+    "name": "Can delete Курс",
+    "content_type": 5,
+    "codename": "delete_course"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 20,
+  "fields": {
+    "name": "Can view Курс",
+    "content_type": 5,
+    "codename": "view_course"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 21,
+  "fields": {
+    "name": "Can add Урок",
+    "content_type": 6,
+    "codename": "add_lesson"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 22,
+  "fields": {
+    "name": "Can change Урок",
+    "content_type": 6,
+    "codename": "change_lesson"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 23,
+  "fields": {
+    "name": "Can delete Урок",
+    "content_type": 6,
+    "codename": "delete_lesson"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 24,
+  "fields": {
+    "name": "Can view Урок",
+    "content_type": 6,
+    "codename": "view_lesson"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 25,
+  "fields": {
+    "name": "Can add log entry",
+    "content_type": 7,
+    "codename": "add_logentry"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 26,
+  "fields": {
+    "name": "Can change log entry",
+    "content_type": 7,
+    "codename": "change_logentry"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 27,
+  "fields": {
+    "name": "Can delete log entry",
+    "content_type": 7,
+    "codename": "delete_logentry"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 28,
+  "fields": {
+    "name": "Can view log entry",
+    "content_type": 7,
+    "codename": "view_logentry"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 29,
+  "fields": {
+    "name": "Can add session",
+    "content_type": 8,
+    "codename": "add_session"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 30,
+  "fields": {
+    "name": "Can change session",
+    "content_type": 8,
+    "codename": "change_session"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 31,
+  "fields": {
+    "name": "Can delete session",
+    "content_type": 8,
+    "codename": "delete_session"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 32,
+  "fields": {
+    "name": "Can view session",
+    "content_type": 8,
+    "codename": "view_session"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 33,
+  "fields": {
+    "name": "Can add Оплата",
+    "content_type": 9,
+    "codename": "add_payment"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 34,
+  "fields": {
+    "name": "Can change Оплата",
+    "content_type": 9,
+    "codename": "change_payment"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 35,
+  "fields": {
+    "name": "Can delete Оплата",
+    "content_type": 9,
+    "codename": "delete_payment"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 36,
+  "fields": {
+    "name": "Can view Оплата",
+    "content_type": 9,
+    "codename": "view_payment"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 37,
+  "fields": {
+    "name": "Can add Подписка",
+    "content_type": 10,
+    "codename": "add_subscription"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 38,
+  "fields": {
+    "name": "Can change Подписка",
+    "content_type": 10,
+    "codename": "change_subscription"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 39,
+  "fields": {
+    "name": "Can delete Подписка",
+    "content_type": 10,
+    "codename": "delete_subscription"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 40,
+  "fields": {
+    "name": "Can view Подписка",
+    "content_type": 10,
+    "codename": "view_subscription"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 41,
+  "fields": {
+    "name": "Can add crontab",
+    "content_type": 11,
+    "codename": "add_crontabschedule"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 42,
+  "fields": {
+    "name": "Can change crontab",
+    "content_type": 11,
+    "codename": "change_crontabschedule"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 43,
+  "fields": {
+    "name": "Can delete crontab",
+    "content_type": 11,
+    "codename": "delete_crontabschedule"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 44,
+  "fields": {
+    "name": "Can view crontab",
+    "content_type": 11,
+    "codename": "view_crontabschedule"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 45,
+  "fields": {
+    "name": "Can add interval",
+    "content_type": 12,
+    "codename": "add_intervalschedule"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 46,
+  "fields": {
+    "name": "Can change interval",
+    "content_type": 12,
+    "codename": "change_intervalschedule"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 47,
+  "fields": {
+    "name": "Can delete interval",
+    "content_type": 12,
+    "codename": "delete_intervalschedule"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 48,
+  "fields": {
+    "name": "Can view interval",
+    "content_type": 12,
+    "codename": "view_intervalschedule"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 49,
+  "fields": {
+    "name": "Can add periodic task",
+    "content_type": 13,
+    "codename": "add_periodictask"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 50,
+  "fields": {
+    "name": "Can change periodic task",
+    "content_type": 13,
+    "codename": "change_periodictask"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 51,
+  "fields": {
+    "name": "Can delete periodic task",
+    "content_type": 13,
+    "codename": "delete_periodictask"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 52,
+  "fields": {
+    "name": "Can view periodic task",
+    "content_type": 13,
+    "codename": "view_periodictask"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 53,
+  "fields": {
+    "name": "Can add periodic task track",
+    "content_type": 14,
+    "codename": "add_periodictasks"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 54,
+  "fields": {
+    "name": "Can change periodic task track",
+    "content_type": 14,
+    "codename": "change_periodictasks"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 55,
+  "fields": {
+    "name": "Can delete periodic task track",
+    "content_type": 14,
+    "codename": "delete_periodictasks"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 56,
+  "fields": {
+    "name": "Can view periodic task track",
+    "content_type": 14,
+    "codename": "view_periodictasks"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 57,
+  "fields": {
+    "name": "Can add solar event",
+    "content_type": 15,
+    "codename": "add_solarschedule"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 58,
+  "fields": {
+    "name": "Can change solar event",
+    "content_type": 15,
+    "codename": "change_solarschedule"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 59,
+  "fields": {
+    "name": "Can delete solar event",
+    "content_type": 15,
+    "codename": "delete_solarschedule"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 60,
+  "fields": {
+    "name": "Can view solar event",
+    "content_type": 15,
+    "codename": "view_solarschedule"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 61,
+  "fields": {
+    "name": "Can add clocked",
+    "content_type": 16,
+    "codename": "add_clockedschedule"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 62,
+  "fields": {
+    "name": "Can change clocked",
+    "content_type": 16,
+    "codename": "change_clockedschedule"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 63,
+  "fields": {
+    "name": "Can delete clocked",
+    "content_type": 16,
+    "codename": "delete_clockedschedule"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 64,
+  "fields": {
+    "name": "Can view clocked",
+    "content_type": 16,
+    "codename": "view_clockedschedule"
+  }
+},
+{
+  "model": "auth.group",
+  "pk": 1,
+  "fields": {
+    "name": "Модераторы",
+    "permissions": [
+      18,
+      20,
+      22,
+      24
+    ]
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 1,
+  "fields": {
+    "app_label": "auth",
+    "model": "permission"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 2,
+  "fields": {
+    "app_label": "auth",
+    "model": "group"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 3,
+  "fields": {
+    "app_label": "contenttypes",
+    "model": "contenttype"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 4,
+  "fields": {
+    "app_label": "users",
+    "model": "user"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 5,
+  "fields": {
+    "app_label": "materials",
+    "model": "course"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 6,
+  "fields": {
+    "app_label": "materials",
+    "model": "lesson"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 7,
+  "fields": {
+    "app_label": "admin",
+    "model": "logentry"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 8,
+  "fields": {
+    "app_label": "sessions",
+    "model": "session"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 9,
+  "fields": {
+    "app_label": "users",
+    "model": "payment"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 10,
+  "fields": {
+    "app_label": "users",
+    "model": "subscription"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 11,
+  "fields": {
+    "app_label": "django_celery_beat",
+    "model": "crontabschedule"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 12,
+  "fields": {
+    "app_label": "django_celery_beat",
+    "model": "intervalschedule"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 13,
+  "fields": {
+    "app_label": "django_celery_beat",
+    "model": "periodictask"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 14,
+  "fields": {
+    "app_label": "django_celery_beat",
+    "model": "periodictasks"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 15,
+  "fields": {
+    "app_label": "django_celery_beat",
+    "model": "solarschedule"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 16,
+  "fields": {
+    "app_label": "django_celery_beat",
+    "model": "clockedschedule"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "r2lntvcipmg7xdvfe5q2d7govd2qdsa4",
+  "fields": {
+    "session_data": ".eJxVjEEOgjAQRe_StWkqM2XApXvP0MzQwaKmTSisjHcXEha6_e-9_zaB1yWFteocpmgu5mxOv5vw8NS8g_jgfC92KHmZJ7G7Yg9a7a1EfV0P9-8gcU1b3UnHCtG1XgBdQyQjovTgiZUYxUXwLTI4wr4R58nTKMRCtFlMaj5f0ak3dA:1u13j4:IocKfYAJumE2nUGiX12-bDDNixqtWSXoyxSK33lb5I4",
+    "expire_date": "2025-04-19T13:38:22.912Z"
+  }
+},
+{
+  "model": "django_celery_beat.intervalschedule",
+  "pk": 1,
+  "fields": {
+    "every": 1,
+    "period": "days"
+  }
+},
+{
+  "model": "django_celery_beat.crontabschedule",
+  "pk": 1,
+  "fields": {
+    "minute": "0",
+    "hour": "4",
+    "day_of_month": "*",
+    "month_of_year": "*",
+    "day_of_week": "*",
+    "timezone": "Asia/Almaty"
+  }
+},
+{
+  "model": "django_celery_beat.periodictasks",
+  "pk": 1,
+  "fields": {
+    "last_update": "2025-04-29T16:03:20.618Z"
+  }
+},
+{
+  "model": "django_celery_beat.periodictask",
+  "pk": 1,
+  "fields": {
+    "name": "celery.backend_cleanup",
+    "task": "celery.backend_cleanup",
+    "interval": null,
+    "crontab": 1,
+    "solar": null,
+    "clocked": null,
+    "args": "[]",
+    "kwargs": "{}",
+    "queue": null,
+    "exchange": null,
+    "routing_key": null,
+    "headers": "{}",
+    "priority": null,
+    "expires": null,
+    "expire_seconds": 43200,
+    "one_off": false,
+    "start_time": null,
+    "enabled": true,
+    "last_run_at": null,
+    "total_run_count": 0,
+    "date_changed": "2025-04-29T16:03:20.618Z",
+    "description": ""
+  }
+},
+{
+  "model": "django_celery_beat.periodictask",
+  "pk": 2,
+  "fields": {
+    "name": "Block inactive users",
+    "task": "users.tasks.block_inactive_users",
+    "interval": 1,
+    "crontab": null,
+    "solar": null,
+    "clocked": null,
+    "args": "[]",
+    "kwargs": "{}",
+    "queue": null,
+    "exchange": null,
+    "routing_key": null,
+    "headers": "{}",
+    "priority": null,
+    "expires": null,
+    "expire_seconds": null,
+    "one_off": false,
+    "start_time": null,
+    "enabled": true,
+    "last_run_at": "2025-04-29T16:03:20.725Z",
+    "total_run_count": 1,
+    "date_changed": "2025-04-29T16:03:20.773Z",
+    "description": ""
+  }
+},
+{
+  "model": "users.user",
+  "pk": 1,
+  "fields": {
+    "password": "pbkdf2_sha256$1000000$oKL9dlv4kiMVotDS9BSDtK$JMnhYSN3R2N41+68rUgSLInGlCaolljUILA7DRpzPfA=",
+    "last_login": "2025-04-05T13:38:22.909Z",
+    "is_superuser": true,
+    "first_name": "Stanislav",
+    "last_name": "Mayatskiy",
+    "is_staff": true,
+    "is_active": true,
+    "date_joined": "2025-03-13T09:08:45.555Z",
+    "username": "stasm226",
+    "email": "stasm226@gmail.com",
+    "phone": null,
+    "city": null,
+    "avatar": "",
+    "is_moderator": false,
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "users.user",
+  "pk": 2,
+  "fields": {
+    "password": "pbkdf2_sha256$260000$abc123$hashedpassword1",
+    "last_login": null,
+    "is_superuser": false,
+    "first_name": "Андрей",
+    "last_name": "Девятов",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2025-03-18T17:54:54.396Z",
+    "username": "andrewdevyatov",
+    "email": "andrew.devyatov@example.com",
+    "phone": "+1234567890",
+    "city": "Moscow",
+    "avatar": "",
+    "is_moderator": false,
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "users.user",
+  "pk": 3,
+  "fields": {
+    "password": "pbkdf2_sha256$260000$xyz456$hashedpassword",
+    "last_login": null,
+    "is_superuser": false,
+    "first_name": "Сергей",
+    "last_name": "Шнуров",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2025-03-18T17:54:54.402Z",
+    "username": "sergeyshnuroff",
+    "email": "sergey.shnurov@example.com",
+    "phone": "+1987654321",
+    "city": "Saint Petersburg",
+    "avatar": "",
+    "is_moderator": false,
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "users.user",
+  "pk": 4,
+  "fields": {
+    "password": "pbkdf2_sha256$260000$def789$hashedpassword",
+    "last_login": null,
+    "is_superuser": false,
+    "first_name": "Пелагея",
+    "last_name": "Телегина",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2025-03-18T17:54:54.402Z",
+    "username": "pelageya",
+    "email": "pelageya@example.com",
+    "phone": "+7987654321",
+    "city": "Novosibirsk",
+    "avatar": "",
+    "is_moderator": false,
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "users.user",
+  "pk": 5,
+  "fields": {
+    "password": "pbkdf2_sha256$160011$def789$hashedpassword",
+    "last_login": null,
+    "is_superuser": false,
+    "first_name": "Николай",
+    "last_name": "Стариков",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2025-03-18T17:54:54.403Z",
+    "username": "nikolaystarikov",
+    "email": "nikolay.starikov@example.com",
+    "phone": "+7987654321",
+    "city": "Moscow",
+    "avatar": "",
+    "is_moderator": false,
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "users.user",
+  "pk": 6,
+  "fields": {
+    "password": "",
+    "last_login": null,
+    "is_superuser": false,
+    "first_name": "Кит",
+    "last_name": "Келлог",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2025-03-24T17:54:54.403Z",
+    "username": "keithkellog",
+    "email": "keith.kellog@example.com",
+    "phone": "+1234567890",
+    "city": "Дейтон",
+    "avatar": "",
+    "is_moderator": false,
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "users.user",
+  "pk": 7,
+  "fields": {
+    "password": "",
+    "last_login": null,
+    "is_superuser": false,
+    "first_name": "Джей Ди",
+    "last_name": "Вэнс",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2025-03-24T17:54:54.403Z",
+    "username": "jdvance",
+    "email": "jd.vance@example.com",
+    "phone": "+1234567890",
+    "city": "Мидлтаун",
+    "avatar": "",
+    "is_moderator": false,
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "users.user",
+  "pk": 8,
+  "fields": {
+    "password": "pbkdf2_sha256$870000$WB1CzrW98fsDDdOSJOAx4C$t3yTnjIsDQGsnQsCPu0v0Y23XoHXl3NWTinkiRXHwzk=",
+    "last_login": null,
+    "is_superuser": false,
+    "first_name": "Дональд Альфред",
+    "last_name": "Трамп",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2025-03-23T08:05:11.124Z",
+    "username": "donaldtrump",
+    "email": "donald.trump@example.com",
+    "phone": "+1234567890",
+    "city": "Вашингтон",
+    "avatar": "",
+    "is_moderator": true,
+    "groups": [
+      1
+    ],
+    "user_permissions": []
+  }
+},
+{
+  "model": "users.user",
+  "pk": 9,
+  "fields": {
+    "password": "pbkdf2_sha256$870000$L7K34QmtY1ov8EkEgiAkgk$iGeMJ1QlSVOtjOl1iNpfTVtP62f8IeJkjfqXFlWqrUo=",
+    "last_login": null,
+    "is_superuser": false,
+    "first_name": "Николай",
+    "last_name": "Панарин",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2025-03-23T08:28:13.788Z",
+    "username": "nikolaypanarin",
+    "email": "nikolay.panarin@example.com",
+    "phone": "+1234567890",
+    "city": "Moscow",
+    "avatar": "",
+    "is_moderator": false,
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "users.user",
+  "pk": 10,
+  "fields": {
+    "password": "pbkdf2_sha256$870000$QAiJtxrYPcsejQ7lcaz0pb$1p5/PE3GQ11igp2U+lU0H5a7IP1pBTCVLxSZaPvwGmE=",
+    "last_login": null,
+    "is_superuser": false,
+    "first_name": "Ирина",
+    "last_name": "Цыцорина",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2025-03-23T09:16:16.619Z",
+    "username": "irinatsy",
+    "email": "irina.tsy@example.com",
+    "phone": "+1234567890",
+    "city": "Aqtobe",
+    "avatar": "",
+    "is_moderator": false,
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "users.user",
+  "pk": 11,
+  "fields": {
+    "password": "pbkdf2_sha256$870000$Tms793o393gyTxkYR52UWF$qyLvUDTVI7CipaG6BsHqazmLucotn2ksVYk/8RSnkec=",
+    "last_login": null,
+    "is_superuser": false,
+    "first_name": "Владимир",
+    "last_name": "Путин",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2025-03-23T12:42:18.721Z",
+    "username": "vladimirputin",
+    "email": "vladimir.putin@example.com",
+    "phone": "+8-800-200-40-40",
+    "city": "Moscow-Kremlin",
+    "avatar": "",
+    "is_moderator": true,
+    "groups": [
+      1
+    ],
+    "user_permissions": []
+  }
+},
+{
+  "model": "users.payment",
+  "pk": 1,
+  "fields": {
+    "user": 7,
+    "date": "2025-03-15T10:30:00Z",
+    "course": 1,
+    "lesson": null,
+    "amount": "4999.99",
+    "payment_method": "transfer",
+    "session_id": null,
+    "link": null,
+    "status": "pending"
+  }
+},
+{
+  "model": "users.payment",
+  "pk": 2,
+  "fields": {
+    "user": 2,
+    "date": "2025-03-14T15:20:00Z",
+    "course": null,
+    "lesson": 3,
+    "amount": "999.99",
+    "payment_method": "cash",
+    "session_id": null,
+    "link": null,
+    "status": "pending"
+  }
+},
+{
+  "model": "users.payment",
+  "pk": 3,
+  "fields": {
+    "user": 3,
+    "date": "2025-03-13T09:00:00Z",
+    "course": 2,
+    "lesson": null,
+    "amount": "6999.99",
+    "payment_method": "transfer",
+    "session_id": null,
+    "link": null,
+    "status": "pending"
+  }
+},
+{
+  "model": "users.payment",
+  "pk": 4,
+  "fields": {
+    "user": 4,
+    "date": "2025-03-12T18:45:00Z",
+    "course": null,
+    "lesson": 1,
+    "amount": "1499.99",
+    "payment_method": "cash",
+    "session_id": null,
+    "link": null,
+    "status": "pending"
+  }
+},
+{
+  "model": "users.payment",
+  "pk": 5,
+  "fields": {
+    "user": 5,
+    "date": "2025-03-11T14:10:00Z",
+    "course": 3,
+    "lesson": null,
+    "amount": "3999.99",
+    "payment_method": "transfer",
+    "session_id": null,
+    "link": null,
+    "status": "pending"
+  }
+},
+{
+  "model": "users.payment",
+  "pk": 6,
+  "fields": {
+    "user": 1,
+    "date": "2025-04-15T10:30:00Z",
+    "course": 1,
+    "lesson": null,
+    "amount": "4999.99",
+    "payment_method": "transfer",
+    "session_id": null,
+    "link": null,
+    "status": "pending"
+  }
+},
+{
+  "model": "users.payment",
+  "pk": 7,
+  "fields": {
+    "user": 4,
+    "date": "2025-04-12T18:45:00Z",
+    "course": null,
+    "lesson": 2,
+    "amount": "1499.99",
+    "payment_method": "cash",
+    "session_id": null,
+    "link": null,
+    "status": "pending"
+  }
+},
+{
+  "model": "users.payment",
+  "pk": 8,
+  "fields": {
+    "user": 4,
+    "date": "2025-05-12T18:45:00Z",
+    "course": null,
+    "lesson": 3,
+    "amount": "1499.99",
+    "payment_method": "cash",
+    "session_id": null,
+    "link": null,
+    "status": "pending"
+  }
+},
+{
+  "model": "users.payment",
+  "pk": 9,
+  "fields": {
+    "user": 2,
+    "date": "2025-04-14T15:20:00Z",
+    "course": null,
+    "lesson": 5,
+    "amount": "999.99",
+    "payment_method": "cash",
+    "session_id": null,
+    "link": null,
+    "status": "pending"
+  }
+},
+{
+  "model": "users.payment",
+  "pk": 10,
+  "fields": {
+    "user": 3,
+    "date": "2025-05-13T09:00:00Z",
+    "course": 2,
+    "lesson": null,
+    "amount": "6999.99",
+    "payment_method": "transfer",
+    "session_id": null,
+    "link": null,
+    "status": "pending"
+  }
+},
+{
+  "model": "users.payment",
+  "pk": 11,
+  "fields": {
+    "user": 1,
+    "date": "2025-04-01T17:11:26.814Z",
+    "course": null,
+    "lesson": null,
+    "amount": "50000.00",
+    "payment_method": "transfer",
+    "session_id": null,
+    "link": null,
+    "status": "pending"
+  }
+},
+{
+  "model": "users.payment",
+  "pk": 12,
+  "fields": {
+    "user": 1,
+    "date": "2025-04-01T17:13:41.186Z",
+    "course": null,
+    "lesson": null,
+    "amount": "50000.00",
+    "payment_method": "transfer",
+    "session_id": null,
+    "link": null,
+    "status": "pending"
+  }
+},
+{
+  "model": "users.payment",
+  "pk": 13,
+  "fields": {
+    "user": 1,
+    "date": "2025-04-01T17:17:20.640Z",
+    "course": null,
+    "lesson": null,
+    "amount": "50000.00",
+    "payment_method": "transfer",
+    "session_id": null,
+    "link": null,
+    "status": "pending"
+  }
+},
+{
+  "model": "users.payment",
+  "pk": 14,
+  "fields": {
+    "user": 1,
+    "date": "2025-04-01T17:22:42.620Z",
+    "course": null,
+    "lesson": null,
+    "amount": "50000.00",
+    "payment_method": "transfer",
+    "session_id": null,
+    "link": null,
+    "status": "pending"
+  }
+},
+{
+  "model": "users.payment",
+  "pk": 15,
+  "fields": {
+    "user": 1,
+    "date": "2025-04-01T17:25:20.353Z",
+    "course": null,
+    "lesson": null,
+    "amount": "50000.00",
+    "payment_method": "transfer",
+    "session_id": null,
+    "link": null,
+    "status": "pending"
+  }
+},
+{
+  "model": "users.payment",
+  "pk": 16,
+  "fields": {
+    "user": 1,
+    "date": "2025-04-01T17:31:11.684Z",
+    "course": null,
+    "lesson": null,
+    "amount": "50000.00",
+    "payment_method": "transfer",
+    "session_id": null,
+    "link": null,
+    "status": "pending"
+  }
+},
+{
+  "model": "users.payment",
+  "pk": 17,
+  "fields": {
+    "user": 1,
+    "date": "2025-04-01T17:35:13.602Z",
+    "course": null,
+    "lesson": null,
+    "amount": "50000.00",
+    "payment_method": "transfer",
+    "session_id": null,
+    "link": null,
+    "status": "pending"
+  }
+},
+{
+  "model": "users.payment",
+  "pk": 18,
+  "fields": {
+    "user": 1,
+    "date": "2025-04-01T17:39:20.604Z",
+    "course": null,
+    "lesson": null,
+    "amount": "50000.00",
+    "payment_method": "transfer",
+    "session_id": null,
+    "link": null,
+    "status": "pending"
+  }
+},
+{
+  "model": "users.payment",
+  "pk": 19,
+  "fields": {
+    "user": 1,
+    "date": "2025-04-01T17:40:53.725Z",
+    "course": null,
+    "lesson": null,
+    "amount": "50000.00",
+    "payment_method": "transfer",
+    "session_id": null,
+    "link": null,
+    "status": "pending"
+  }
+},
+{
+  "model": "users.payment",
+  "pk": 20,
+  "fields": {
+    "user": 1,
+    "date": "2025-04-01T17:43:33.785Z",
+    "course": null,
+    "lesson": null,
+    "amount": "50000.00",
+    "payment_method": "transfer",
+    "session_id": null,
+    "link": null,
+    "status": "pending"
+  }
+},
+{
+  "model": "users.payment",
+  "pk": 21,
+  "fields": {
+    "user": 1,
+    "date": "2025-04-02T10:44:30.639Z",
+    "course": null,
+    "lesson": null,
+    "amount": "50000.00",
+    "payment_method": "transfer",
+    "session_id": null,
+    "link": null,
+    "status": "pending"
+  }
+},
+{
+  "model": "users.payment",
+  "pk": 22,
+  "fields": {
+    "user": 1,
+    "date": "2025-04-02T10:48:16.162Z",
+    "course": null,
+    "lesson": null,
+    "amount": "50000.00",
+    "payment_method": "transfer",
+    "session_id": null,
+    "link": null,
+    "status": "pending"
+  }
+},
+{
+  "model": "users.payment",
+  "pk": 23,
+  "fields": {
+    "user": 1,
+    "date": "2025-04-02T10:49:21.807Z",
+    "course": null,
+    "lesson": null,
+    "amount": "50000.00",
+    "payment_method": "transfer",
+    "session_id": null,
+    "link": null,
+    "status": "pending"
+  }
+},
+{
+  "model": "users.payment",
+  "pk": 24,
+  "fields": {
+    "user": 1,
+    "date": "2025-04-02T10:52:58.887Z",
+    "course": null,
+    "lesson": null,
+    "amount": "50000.00",
+    "payment_method": "transfer",
+    "session_id": null,
+    "link": null,
+    "status": "pending"
+  }
+},
+{
+  "model": "users.payment",
+  "pk": 25,
+  "fields": {
+    "user": 1,
+    "date": "2025-04-02T10:53:37.089Z",
+    "course": null,
+    "lesson": null,
+    "amount": "50000.00",
+    "payment_method": "transfer",
+    "session_id": null,
+    "link": null,
+    "status": "pending"
+  }
+},
+{
+  "model": "users.payment",
+  "pk": 26,
+  "fields": {
+    "user": 1,
+    "date": "2025-04-02T10:55:57.367Z",
+    "course": null,
+    "lesson": null,
+    "amount": "50000.00",
+    "payment_method": "transfer",
+    "session_id": null,
+    "link": null,
+    "status": "pending"
+  }
+},
+{
+  "model": "users.payment",
+  "pk": 27,
+  "fields": {
+    "user": 1,
+    "date": "2025-04-02T12:56:26.044Z",
+    "course": null,
+    "lesson": null,
+    "amount": "50000.00",
+    "payment_method": "transfer",
+    "session_id": null,
+    "link": null,
+    "status": "pending"
+  }
+},
+{
+  "model": "users.payment",
+  "pk": 28,
+  "fields": {
+    "user": 1,
+    "date": "2025-04-02T12:57:58.284Z",
+    "course": null,
+    "lesson": null,
+    "amount": "50000.00",
+    "payment_method": "transfer",
+    "session_id": null,
+    "link": null,
+    "status": "pending"
+  }
+},
+{
+  "model": "users.payment",
+  "pk": 29,
+  "fields": {
+    "user": 1,
+    "date": "2025-04-02T13:05:47.111Z",
+    "course": null,
+    "lesson": null,
+    "amount": "50000.00",
+    "payment_method": "transfer",
+    "session_id": null,
+    "link": null,
+    "status": "pending"
+  }
+},
+{
+  "model": "users.payment",
+  "pk": 30,
+  "fields": {
+    "user": 1,
+    "date": "2025-04-02T13:06:37.533Z",
+    "course": null,
+    "lesson": null,
+    "amount": "50000.00",
+    "payment_method": "transfer",
+    "session_id": null,
+    "link": null,
+    "status": "pending"
+  }
+},
+{
+  "model": "users.payment",
+  "pk": 31,
+  "fields": {
+    "user": 1,
+    "date": "2025-04-02T13:07:31.292Z",
+    "course": null,
+    "lesson": null,
+    "amount": "50000.00",
+    "payment_method": "transfer",
+    "session_id": null,
+    "link": null,
+    "status": "pending"
+  }
+},
+{
+  "model": "users.payment",
+  "pk": 32,
+  "fields": {
+    "user": 1,
+    "date": "2025-04-02T13:07:50.538Z",
+    "course": null,
+    "lesson": null,
+    "amount": "50000.00",
+    "payment_method": "transfer",
+    "session_id": null,
+    "link": null,
+    "status": "pending"
+  }
+},
+{
+  "model": "users.payment",
+  "pk": 33,
+  "fields": {
+    "user": 1,
+    "date": "2025-04-02T13:12:10.492Z",
+    "course": null,
+    "lesson": null,
+    "amount": "50000.00",
+    "payment_method": "transfer",
+    "session_id": null,
+    "link": null,
+    "status": "pending"
+  }
+},
+{
+  "model": "users.payment",
+  "pk": 34,
+  "fields": {
+    "user": 1,
+    "date": "2025-04-02T13:23:26.941Z",
+    "course": null,
+    "lesson": null,
+    "amount": "50000.00",
+    "payment_method": "transfer",
+    "session_id": null,
+    "link": null,
+    "status": "pending"
+  }
+},
+{
+  "model": "users.payment",
+  "pk": 35,
+  "fields": {
+    "user": 1,
+    "date": "2025-04-02T13:33:25.829Z",
+    "course": null,
+    "lesson": null,
+    "amount": "50000.00",
+    "payment_method": "transfer",
+    "session_id": null,
+    "link": null,
+    "status": "pending"
+  }
+},
+{
+  "model": "users.payment",
+  "pk": 36,
+  "fields": {
+    "user": 1,
+    "date": "2025-04-02T13:34:32.411Z",
+    "course": null,
+    "lesson": null,
+    "amount": "50000.00",
+    "payment_method": "transfer",
+    "session_id": null,
+    "link": null,
+    "status": "pending"
+  }
+},
+{
+  "model": "users.payment",
+  "pk": 37,
+  "fields": {
+    "user": 1,
+    "date": "2025-04-02T13:37:14.465Z",
+    "course": null,
+    "lesson": null,
+    "amount": "50000.00",
+    "payment_method": "transfer",
+    "session_id": null,
+    "link": null,
+    "status": "pending"
+  }
+},
+{
+  "model": "users.payment",
+  "pk": 38,
+  "fields": {
+    "user": 1,
+    "date": "2025-04-02T13:43:42.967Z",
+    "course": null,
+    "lesson": null,
+    "amount": "50000.00",
+    "payment_method": "transfer",
+    "session_id": null,
+    "link": null,
+    "status": "pending"
+  }
+},
+{
+  "model": "users.payment",
+  "pk": 39,
+  "fields": {
+    "user": 1,
+    "date": "2025-04-02T13:54:37.410Z",
+    "course": null,
+    "lesson": null,
+    "amount": "50000.00",
+    "payment_method": "transfer",
+    "session_id": null,
+    "link": null,
+    "status": "pending"
+  }
+},
+{
+  "model": "users.payment",
+  "pk": 40,
+  "fields": {
+    "user": 1,
+    "date": "2025-04-02T14:16:27.855Z",
+    "course": null,
+    "lesson": null,
+    "amount": "50000.00",
+    "payment_method": "transfer",
+    "session_id": null,
+    "link": null,
+    "status": "pending"
+  }
+},
+{
+  "model": "users.payment",
+  "pk": 41,
+  "fields": {
+    "user": 1,
+    "date": "2025-04-02T14:18:51.499Z",
+    "course": null,
+    "lesson": null,
+    "amount": "50000.00",
+    "payment_method": "transfer",
+    "session_id": null,
+    "link": null,
+    "status": "pending"
+  }
+},
+{
+  "model": "users.payment",
+  "pk": 42,
+  "fields": {
+    "user": 1,
+    "date": "2025-04-02T14:20:20.105Z",
+    "course": null,
+    "lesson": null,
+    "amount": "50000.00",
+    "payment_method": "transfer",
+    "session_id": null,
+    "link": null,
+    "status": "pending"
+  }
+},
+{
+  "model": "users.payment",
+  "pk": 43,
+  "fields": {
+    "user": 1,
+    "date": "2025-04-02T14:20:47.895Z",
+    "course": null,
+    "lesson": null,
+    "amount": "50000.00",
+    "payment_method": "transfer",
+    "session_id": "cs_test_a1RVm7zR28dj4BNS0bKsP9YiWkXjvPNgGluraao00JRtwC08Sdi97Xsr15",
+    "link": "https://checkout.stripe.com/c/pay/cs_test_a1RVm7zR28dj4BNS0bKsP9YiWkXjvPNgGluraao00JRtwC08Sdi97Xsr15#fidkdWxOYHwnPyd1blpxYHZxWjA0Vz1ybG9UX1NrRGNOS3U2YUBwdjBhMXd1SWx9aEFSUjJwalN3M3JRfHxpaXNnY1ZHTUFsa0dXQUQ9aWF1T2N9Vn9pMH9UTUZxVERoTFxSVXdyZkhzNzJoNTVRVDxAZ05fUycpJ2N3amhWYHdzYHcnP3F3cGApJ2lkfGpwcVF8dWAnPyd2bGtiaWBabHFgaCcpJ2BrZGdpYFVpZGZgbWppYWB3dic%2FcXdwYHgl",
+    "status": "pending"
+  }
+},
+{
+  "model": "users.payment",
+  "pk": 44,
+  "fields": {
+    "user": 1,
+    "date": "2025-04-02T14:22:27.033Z",
+    "course": null,
+    "lesson": null,
+    "amount": "50000.00",
+    "payment_method": "transfer",
+    "session_id": "cs_test_a1N7GbXnL1ji9frkF8EQI8YLIjv00iNGVYGMVwNnCBzPQoC1h2ESO8ySQh",
+    "link": "https://checkout.stripe.com/c/pay/cs_test_a1N7GbXnL1ji9frkF8EQI8YLIjv00iNGVYGMVwNnCBzPQoC1h2ESO8ySQh#fidkdWxOYHwnPyd1blpxYHZxWjA0Vz1ybG9UX1NrRGNOS3U2YUBwdjBhMXd1SWx9aEFSUjJwalN3M3JRfHxpaXNnY1ZHTUFsa0dXQUQ9aWF1T2N9Vn9pMH9UTUZxVERoTFxSVXdyZkhzNzJoNTVRVDxAZ05fUycpJ2N3amhWYHdzYHcnP3F3cGApJ2lkfGpwcVF8dWAnPyd2bGtiaWBabHFgaCcpJ2BrZGdpYFVpZGZgbWppYWB3dic%2FcXdwYHgl",
+    "status": "pending"
+  }
+},
+{
+  "model": "users.payment",
+  "pk": 45,
+  "fields": {
+    "user": 1,
+    "date": "2025-04-02T14:22:53.941Z",
+    "course": 1,
+    "lesson": null,
+    "amount": "50000.00",
+    "payment_method": "transfer",
+    "session_id": "cs_test_a1aTzM37ZCo2rUbtFSuFKl2FXWESW12pQUg77pcHWrDf8jlyEAdjs5JUL5",
+    "link": "https://checkout.stripe.com/c/pay/cs_test_a1aTzM37ZCo2rUbtFSuFKl2FXWESW12pQUg77pcHWrDf8jlyEAdjs5JUL5#fidkdWxOYHwnPyd1blpxYHZxWjA0Vz1ybG9UX1NrRGNOS3U2YUBwdjBhMXd1SWx9aEFSUjJwalN3M3JRfHxpaXNnY1ZHTUFsa0dXQUQ9aWF1T2N9Vn9pMH9UTUZxVERoTFxSVXdyZkhzNzJoNTVRVDxAZ05fUycpJ2N3amhWYHdzYHcnP3F3cGApJ2lkfGpwcVF8dWAnPyd2bGtiaWBabHFgaCcpJ2BrZGdpYFVpZGZgbWppYWB3dic%2FcXdwYHgl",
+    "status": "paid"
+  }
+},
+{
+  "model": "users.subscription",
+  "pk": 1,
+  "fields": {
+    "user": 2,
+    "course": 1
+  }
+},
+{
+  "model": "users.subscription",
+  "pk": 2,
+  "fields": {
+    "user": 3,
+    "course": 2
+  }
+},
+{
+  "model": "users.subscription",
+  "pk": 3,
+  "fields": {
+    "user": 4,
+    "course": 3
+  }
+},
+{
+  "model": "users.subscription",
+  "pk": 4,
+  "fields": {
+    "user": 5,
+    "course": 4
+  }
+},
+{
+  "model": "users.subscription",
+  "pk": 5,
+  "fields": {
+    "user": 1,
+    "course": 1
+  }
+},
+{
+  "model": "materials.course",
+  "pk": 1,
+  "fields": {
+    "name": "Python для начинающих",
+    "description": "Основы языка Python.",
+    "image": "courses/python_basics.jpg",
+    "owner": 2,
+    "updated_at": "2025-04-05T11:26:44.973Z"
+  }
+},
+{
+  "model": "materials.course",
+  "pk": 2,
+  "fields": {
+    "name": "Django с нуля",
+    "description": "Создание веб-приложений на Django. Лучший курс по мнению экспертов.",
+    "image": "courses/django_basics.jpg",
+    "owner": 1,
+    "updated_at": "2025-04-05T11:26:44.973Z"
+  }
+},
+{
+  "model": "materials.course",
+  "pk": 3,
+  "fields": {
+    "name": "SQL для начинающих",
+    "description": "Основы работы с базами данных.",
+    "image": "courses/sql_basics.jpg",
+    "owner": 1,
+    "updated_at": "2025-04-05T11:26:44.973Z"
+  }
+},
+{
+  "model": "materials.course",
+  "pk": 4,
+  "fields": {
+    "name": "Алгоритмы и структуры данных",
+    "description": "Разбор алгоритмов и структур данных.",
+    "image": "courses/algorithms.jpg",
+    "owner": 3,
+    "updated_at": "2025-04-05T11:26:44.973Z"
+  }
+},
+{
+  "model": "materials.course",
+  "pk": 5,
+  "fields": {
+    "name": "Основы веб-разработки",
+    "description": "Введение в HTML, CSS и JavaScript.",
+    "image": "courses/web_basics.jpg",
+    "owner": 4,
+    "updated_at": "2025-04-05T11:26:44.973Z"
+  }
+},
+{
+  "model": "materials.course",
+  "pk": 8,
+  "fields": {
+    "name": "Новый курс",
+    "description": "Описание нового курса",
+    "image": "",
+    "owner": 1,
+    "updated_at": "2025-04-05T11:26:44.973Z"
+  }
+},
+{
+  "model": "materials.course",
+  "pk": 9,
+  "fields": {
+    "name": "Новый курс 2",
+    "description": "Описание нового курса 2",
+    "image": "",
+    "owner": 1,
+    "updated_at": "2025-04-05T11:26:44.973Z"
+  }
+},
+{
+  "model": "materials.course",
+  "pk": 10,
+  "fields": {
+    "name": "Новый курс 3",
+    "description": "Описание нового курса 3",
+    "image": "",
+    "owner": 1,
+    "updated_at": "2025-04-05T11:26:44.973Z"
+  }
+},
+{
+  "model": "materials.course",
+  "pk": 11,
+  "fields": {
+    "name": "Новый курс 4",
+    "description": "Описание нового курса 4 с примерами",
+    "image": "",
+    "owner": 1,
+    "updated_at": "2025-04-05T11:26:44.973Z"
+  }
+},
+{
+  "model": "materials.course",
+  "pk": 12,
+  "fields": {
+    "name": "Новый курс 5-1",
+    "description": "Новое описание курса 5",
+    "image": "",
+    "owner": null,
+    "updated_at": "2025-04-05T11:26:44.973Z"
+  }
+},
+{
+  "model": "materials.course",
+  "pk": 15,
+  "fields": {
+    "name": "Из жизни единорогов",
+    "description": "Описание жизни розовых единорогов и как их увидеть!",
+    "image": "",
+    "owner": 10,
+    "updated_at": "2025-04-05T11:26:44.973Z"
+  }
+},
+{
+  "model": "materials.course",
+  "pk": 16,
+  "fields": {
+    "name": "Test course",
+    "description": "Test course description.",
+    "image": "",
+    "owner": 1,
+    "updated_at": "2025-04-05T11:26:44.973Z"
+  }
+},
+{
+  "model": "materials.course",
+  "pk": 17,
+  "fields": {
+    "name": "Test course 2",
+    "description": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+    "image": "",
+    "owner": 1,
+    "updated_at": "2025-04-05T11:26:44.973Z"
+  }
+},
+{
+  "model": "materials.lesson",
+  "pk": 1,
+  "fields": {
+    "name": "Введение в Python",
+    "description": "История и применение Python.",
+    "course": 1,
+    "image": "lessons/python_intro.jpg",
+    "video": "lessons/python_intro.mp4",
+    "owner": null
+  }
+},
+{
+  "model": "materials.lesson",
+  "pk": 2,
+  "fields": {
+    "name": "Переменные и типы данных",
+    "description": "Разбор переменных и основных типов данных.",
+    "course": 1,
+    "image": "lessons/python_vars.jpg",
+    "video": "lessons/python_vars.mp4",
+    "owner": null
+  }
+},
+{
+  "model": "materials.lesson",
+  "pk": 3,
+  "fields": {
+    "name": "Основы Django",
+    "description": "Структура проекта Django.",
+    "course": 2,
+    "image": "lessons/django_basics.jpg",
+    "video": "lessons/django_basics.mp4",
+    "owner": null
+  }
+},
+{
+  "model": "materials.lesson",
+  "pk": 4,
+  "fields": {
+    "name": "Основы SQL",
+    "description": "Создание и выполнение SQL-запросов.",
+    "course": 3,
+    "image": "lessons/sql_basics.jpg",
+    "video": "lessons/sql_basics.mp4",
+    "owner": null
+  }
+},
+{
+  "model": "materials.lesson",
+  "pk": 5,
+  "fields": {
+    "name": "Алгоритмы сортировки",
+    "description": "Разбор популярных алгоритмов сортировки.",
+    "course": 4,
+    "image": "lessons/sorting.jpg",
+    "video": "lessons/sorting.mp4",
+    "owner": null
+  }
+}
+]
