@@ -4,7 +4,7 @@ services:
     build: .
     image: school
     container_name: school
-    restart: always
+    # restart: always
     # command: bash -c "python manage.py migrate && python manage.py collectstatic --noinput && gunicorn config.wsgi:application --bind 0.0.0.0:8000"
     command: /entrypoint_web.sh
     env_file:
@@ -14,9 +14,9 @@ services:
     working_dir: /app # Указание рабочей директории
     volumes:
       - .:/app
-      - static_volume:/app/static
-    ports:
-      - "8000:8000"
+      - static_volume:/app/staticfiles
+    expose:
+      - "8000"
     depends_on:
       - postgres
       - redis
