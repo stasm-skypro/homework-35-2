@@ -12,5 +12,8 @@ echo "PostgreSQL started"
 # Применяем миграции
 python manage.py migrate
 
+# Собираем статику
+python manage.py collectstatic --noinput
+
 # Запускаем сервер
-exec python manage.py runserver 0.0.0.0:8000
+exec gunicorn config.wsgi:application --bind 0.0.0.0:8000

@@ -1,10 +1,11 @@
 services:
+
   web:
     build: .
     image: school
     container_name: school
     restart: always
-    # command: bash -c "python manage.py migrate && python manage.py runserver 0.0.0.0:8000"
+    # command: bash -c "python manage.py migrate && python manage.py collectstatic --noinput && gunicorn config.wsgi:application --bind 0.0.0.0:8000"
     command: /entrypoint_web.sh
     env_file:
       - ./.env
@@ -25,7 +26,7 @@ services:
       retries: 3
       start_period: 30s
       timeout: 5s
-      
+
   postgres:
     image: postgres:17-alpine
     container_name: psgr
