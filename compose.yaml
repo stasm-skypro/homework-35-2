@@ -20,7 +20,7 @@ services:
     networks:
       - dbnet
     depends_on:
-      - postgres
+      - db
       - redis
     healthcheck:
       test: ["CMD", "curl", "-f", "http://localhost:8000"]
@@ -56,7 +56,7 @@ services:
     ports:
       - "8080:8080"
     links:
-      - "postgres:db"
+      - "db:db"
     networks:
       - dbnet
     depends_on:

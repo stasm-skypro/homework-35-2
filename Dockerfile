@@ -18,6 +18,7 @@ RUN apt-get update && apt-get install -y netcat-traditional && rm -rf /var/lib/a
 COPY requirements.txt .
 RUN pip install --upgrade pip
 RUN pip install -r requirements.txt
+RUN pip install gunicorn
 
 # Копируем все файлы проекта в контейнер
 COPY . .
@@ -34,4 +35,5 @@ RUN chmod +x /entrypoint_celery_beat.sh
 USER userdj
 
 # Указываем команду по умолчанию (для web)
-CMD ["python", "manage.py", "runserver", "0.0.0.0:8000"]
+# CMD ["python", "manage.py", "runserver", "0.0.0.0:8000"]
+CMD ["gunicorn", "config.wsgi:application", "--bind", "0.0.0.0:8000"]
