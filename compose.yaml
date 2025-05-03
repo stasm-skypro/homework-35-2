@@ -5,18 +5,20 @@ services:
     image: school
     container_name: school
     # restart: always
-    # command: bash -c "python manage.py migrate && python manage.py collectstatic --noinput && gunicorn config.wsgi:application --bind 0.0.0.0:8000"
+    # command: bash -c "python manage.py migrate \
+    # && python manage.py collectstatic --noinput \
+    # && gunicorn config.wsgi:application --bind 0.0.0.0:8000"
+    working_dir: /app
     command: /entrypoint_web.sh
-    env_file:
-      - ./.env
-    networks:
-      - dbnet
-    working_dir: /app # Указание рабочей директории
     volumes:
       - .:/app
       - static_volume:/app/staticfiles
     expose:
       - "8000"
+    env_file:
+      - ./.env
+    networks:
+      - dbnet
     depends_on:
       - postgres
       - redis
@@ -27,7 +29,7 @@ services:
       start_period: 30s
       timeout: 5s
 
-  postgres:
+  db:
     image: postgres:17-alpine
     container_name: psgr
     environment:
@@ -58,7 +60,7 @@ services:
     networks:
       - dbnet
     depends_on:
-      - postgres
+      - db
     healthcheck:
       test: ["CMD", "pg_isready", "-U", "${DB_USER}", "-d", "${DB_NAME}"]
       interval: 10s
@@ -68,6 +70,10 @@ services:
 
   redis:
     image: redis
+    volumes:
+      - redis-data:/data
+    env_file:
+      - ./.env
     ports:
       - "6379:6379"
     networks:
@@ -85,18 +91,18 @@ services:
     container_name: celery
     # command: bash -c "python manage.py migrate && celery -A config worker --loglevel=info"
     command: /entrypoint_celery.sh
-    working_dir: /app # Указание рабочей директории
+    working_dir: /app  # Монтируем всю текущую директорию в контейнер, потому что "celery" нужны "config" и tasks.py
     env_file:
       - ./.env
     networks:
       - dbnet
     volumes:
-      - .:/app # Монтируем всю текущую директорию в контейнер, потому что "celery" нужна директория "config".
+      - .:/app
     depends_on:
-      - postgres
+      - db
       - redis
     healthcheck:
-      test: ["CMD", "curl", "-f", "http://localhost:8000/healthcheck"] # Замените на подходящий эндпоинт проверки
+      test: ["CMD", "curl", "-f", "http://localhost:8000/healthcheck"]
       interval: 10s
       retries: 3
       start_period: 30s
@@ -108,18 +114,18 @@ services:
     container_name: celery-beat
     # command: bash -c "python manage.py migrate && celery -A config beat --loglevel=info"
     command: /entrypoint_celery_beat.sh
-    working_dir: /app # Указание рабочей директории
+    working_dir: /app 
     env_file:
       - ./.env
     networks:
       - dbnet
     volumes:
-      - .:/app # Монтируем всю текущую директорию в контейнер, потому что "celery" нужна директория "config".
+      - .:/app # Монтируем всю текущую директорию в контейнер, потому что "celery" нужны "config" и tasks.py
     depends_on:
-      - postgres
+      - db
       - redis
     healthcheck:
-      test: ["CMD", "curl", "-f", "http://localhost:8000/healthcheck"] # Замените на подходящий эндпоинт проверки
+      test: ["CMD", "curl", "-f", "http://localhost:8000/healthcheck"]
       interval: 10s
       retries: 3
       start_period: 30s
@@ -132,3 +138,4 @@ networks:
 volumes:
   postgres-data:
   static_volume:
+  redis-data:
