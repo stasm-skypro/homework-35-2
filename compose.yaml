@@ -134,7 +134,7 @@ services:
   nginx:
     build:
       context: .
-      dockerfile: nginx/Dockerfile  # если имя Dockerfile стандартное
+      dockerfile: nginx/Dockerfile  # Updated path to Dockerfile
     container_name: nginx
     ports:
       - "80:80"
