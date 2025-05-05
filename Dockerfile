@@ -31,6 +31,15 @@ RUN chmod +x /entrypoint_web.sh
 RUN chmod +x /entrypoint_celery.sh
 RUN chmod +x /entrypoint_celery_beat.sh
 
+# Создаём директорию логов и файл логов с правильными правами
+RUN mkdir -p /app/materials/logs \
+  && touch /app/materials/logs/reports.log \
+  && chown -R userdj:groupdjango /app/materials/logs
+
+RUN mkdir -p /app/users/logs \
+  && touch /app/users/logs/reports.log \
+  && chown -R userdj:groupdjango /app/materials/logs
+
 # Создаем директорию для статики от имени root и назначаем права
 RUN mkdir -p /app/staticfiles && chown -R userdj:groupdjango /app/staticfiles
 
