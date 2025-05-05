@@ -31,12 +31,11 @@ RUN chmod +x /entrypoint_web.sh
 RUN chmod +x /entrypoint_celery.sh
 RUN chmod +x /entrypoint_celery_beat.sh
 
-# ✅ Создаем директорию для статики от имени root и назначаем права
+# Создаем директорию для статики от имени root и назначаем права
 RUN mkdir -p /app/staticfiles && chown -R userdj:groupdjango /app/staticfiles
 
-# Меняем пользователя на userdj
+# Возвращаем пользователя на userdj
 USER userdj
 
 # Указываем команду по умолчанию (для web)
-# CMD ["python", "manage.py", "runserver", "0.0.0.0:8000"]
 CMD ["gunicorn", "config.wsgi:application", "--bind", "0.0.0.0:8000"]

@@ -144,6 +144,12 @@ services:
       - web
     networks:
       - dbnet
+    healthcheck:  # Проверят доступность главной страницы
+      test: ["CMD", "curl", "-f", "http://localhost/"]
+      interval: 10s
+      timeout: 5s
+      retries: 3
+      start_period: 30s
 
 networks:
   dbnet:

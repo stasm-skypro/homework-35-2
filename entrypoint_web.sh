@@ -9,7 +9,7 @@ done
 
 echo "PostgreSQL started"
 
-# Create staticfiles directory with proper permissions
+# Создаём директорию staticfiles с нужными правами
 mkdir -p /app/staticfiles
 chmod -R 777 /app/staticfiles
 
