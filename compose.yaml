@@ -9,7 +9,7 @@ services:
     # && python manage.py collectstatic --noinput \
     # && gunicorn config.wsgi:application --bind 0.0.0.0:8000"
     working_dir: /app
-    command: ["/app/scripts/entrypoint_web.sh"]
+    command: /app/scripts/entrypoint_web.sh
     # command: /entrypoint_web.sh
     volumes:
       - .:/app
@@ -90,7 +90,7 @@ services:
     build: .
     image: celery
     container_name: celery
-    command: ["/app/scripts/entrypoint_celery.sh"]
+    command: /app/scripts/entrypoint_celery.sh
     # command: /entrypoint_celery.sh
     working_dir: /app  # Монтируем всю текущую директорию в контейнер, потому что "celery" нужны "config" и tasks.py
     env_file:
@@ -113,7 +113,7 @@ services:
     build: .
     image: celery-beat
     container_name: celery-beat
-    command: ["/app/scripts/entrypoint_celery_beat.sh"]
+    command: /app/scripts/entrypoint_celery_beat.sh
     # command: /entrypoint_celery_beat.sh
     working_dir: /app 
     env_file:
