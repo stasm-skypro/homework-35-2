@@ -12,7 +12,7 @@ echo "PostgreSQL started"
 # Применяем миграции
 python manage.py migrate
 
-# Создаём директории логов и файлы логов
+# Создаём директории логов и файлы логов (запускаем скрипт)
 source "$(dirname "$0")/entrypoint_prepare_logs.sh"
 
 # Запускаем Celery
