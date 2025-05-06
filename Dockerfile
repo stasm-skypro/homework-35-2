@@ -25,7 +25,7 @@ COPY . .
 
 # Копируем скрипты и даём права на исполнение
 COPY scripts /app/scripts
-RUN chmod +x /app/scripts/*.sh
+RUN chmod +x /app/scripts/*.sh && chown -R userdj:groupdjango /app/scripts
 # COPY entrypoint_web.sh /entrypoint_web.sh
 # COPY entrypoint_celery.sh /entrypoint_celery.sh
 # COPY entrypoint_celery_beat.sh /entrypoint_celery_beat.sh
