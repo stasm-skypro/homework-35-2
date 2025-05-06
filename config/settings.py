@@ -8,7 +8,7 @@ from datetime import timedelta
 from pathlib import Path
 from dotenv import load_dotenv
 
-# Load environment variables from .env file
+# Загрузка переменных окружения из .env file
 load_dotenv(override=True)
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -137,6 +137,8 @@ LOGGING = {
             "filename": os.path.join(BASE_DIR, "users/logs/reports.log"),
             "encoding": "utf-8",
             "formatter": "verbose",
+            "dalay": True,  # <-- отложенное открытие файла: файл будет открыт только при первом логе,
+            # а не сразу при конфигурации
         },
         "materials_file": {
             "level": "DEBUG",
@@ -144,6 +146,8 @@ LOGGING = {
             "filename": os.path.join(BASE_DIR, "materials/logs/reports.log"),
             "encoding": "utf-8",
             "formatter": "verbose",
+            "dalay": True,  # <-- отложенное открытие файла: файл будет открыт только при первом логе,
+            # а не сразу при конфигурации
         },
     },
     "loggers": {
