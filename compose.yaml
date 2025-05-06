@@ -51,24 +51,6 @@ services:
       start_period: 30s
       timeout: 5s
 
-  adminer:
-    image: adminer
-    container_name: adminer
-    ports:
-      - "8080:8080"
-    links:
-      - "db:db"
-    networks:
-      - dbnet
-    depends_on:
-      - db
-    healthcheck:
-      test: ["CMD", "pg_isready", "-U", "${DB_USER}", "-d", "${DB_NAME}"]
-      interval: 10s
-      retries: 5
-      start_period: 30s
-      timeout: 5s
-
   redis:
     image: redis
     volumes:
