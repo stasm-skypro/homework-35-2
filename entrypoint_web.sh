@@ -16,6 +16,10 @@ chmod -R 777 /app/staticfiles
 # Применяем миграции
 python manage.py migrate
 
+# Создаём директории логов и файлы логов
+mkdir -p /app/materials/logs && mkdir -p /app/users/logs
+touch /app/materials/logs/reports.log && touch /app/users/logs/reports.log
+
 # Собираем статику
 python manage.py collectstatic --noinput
 
