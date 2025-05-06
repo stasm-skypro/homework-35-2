@@ -137,7 +137,7 @@ LOGGING = {
             "filename": os.path.join(BASE_DIR, "users/logs/reports.log"),
             "encoding": "utf-8",
             "formatter": "verbose",
-            "dalay": True,  # <-- отложенное открытие файла: файл будет открыт только при первом логе,
+            "delay": True,  # <-- отложенное открытие файла: файл будет открыт только при первом логе,
             # а не сразу при конфигурации
         },
         "materials_file": {
@@ -146,7 +146,7 @@ LOGGING = {
             "filename": os.path.join(BASE_DIR, "materials/logs/reports.log"),
             "encoding": "utf-8",
             "formatter": "verbose",
-            "dalay": True,  # <-- отложенное открытие файла: файл будет открыт только при первом логе,
+            "delay": True,  # <-- отложенное открытие файла: файл будет открыт только при первом логе,
             # а не сразу при конфигурации
         },
     },
