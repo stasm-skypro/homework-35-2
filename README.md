@@ -138,3 +138,15 @@ May 06 14:35:12 compute-vm-2-2-20-ssd-1746184035719 systemd[1]: Finished school.
 ```
 
 # 2. CI/CD
+
+Для осуществления CI/CD настроены Github Actions.
+В Github Secrets сохранены необходивые переменные:
+DJANGO_ALLOWED_HOSTS, DJANGO_SECRET_KEY, DOCKER_PASSWORD, DOCKER_USERNAME, SERVER_IP, SSH_PRIVATE_KEY, SSH_USER.
+
+CI-pipline настроен для событий push и pull_request для ветки main.
+
+Jobs:
+- lint - flake8
+- test - 30 тестов
+- build
+- deploy
