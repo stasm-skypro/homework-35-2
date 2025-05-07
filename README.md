@@ -150,3 +150,5 @@ Jobs:
 - test - 30 тестов
 - build
 - deploy
+
+![ci-pipline](/media/readme_pic/ci-pipline.png)
