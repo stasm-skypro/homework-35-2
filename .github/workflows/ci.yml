@@ -12,7 +12,7 @@ jobs:
 
     env:
       DJANGO_ALLOWED_HOSTS: ${{ secrets.DJANGO_ALLOWED_HOSTS }}
-      SECRET_KEY: ${{ secrets.DJANGO_SECRET_KEY }}
+      SECRET_KEY: ${{ secrets.SECRET_KEY }}
       DEBUG: "False"
 
     steps:
