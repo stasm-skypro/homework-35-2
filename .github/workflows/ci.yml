@@ -46,7 +46,8 @@ jobs:
       
       - name: Create log directories
         run: |
-          mkdir -p materials/logs users/logs
+          # Добавляем создание директорий для логов и статических файлов 
+          mkdir -p materials/logs users/logs static staticfiles
 
       - name: Run tests
         env:
