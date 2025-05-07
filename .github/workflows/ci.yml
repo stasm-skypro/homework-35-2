@@ -1,10 +1,20 @@
 name: Django CI
 
-on: [ push, pull_request ]
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
 
 jobs:
   lint:
     runs-on: ubuntu-latest
+
+    env:
+      DJANGO_ALLOWED_HOSTS: ${{ secrets.DJANGO_ALLOWED_HOSTS }}
+      SECRET_KEY: ${{ secrets.DJANGO_SECRET_KEY }}
+      DEBUG: "False"
+      
     steps:
       - name: Checkout code
         uses: actions/checkout@v3
